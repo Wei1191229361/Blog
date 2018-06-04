@@ -1,0 +1,247 @@
+body {
+  background:url(../images/light.png);
+  //头部区域
+  .myheader {
+  height: 350px;
+  position: relative;
+  background: url('../images/banner1.jpg') 0 0/cover no-repeat;
+  
+#logo { 
+  width: 100%;
+  position: relative;
+  height: 180px;
+  background: transparent;
+  color: #888;
+  padding: 20px 0 0 0;  
+}
+
+#logo #logo_text { 
+  position: absolute;
+  left: 245px;
+  top: 80px;
+  width: 250px;
+  border-radius: 7px;
+  -moz-border-radius: 7px;
+  -webkit-border: 7px;
+  background-color: rgba(0,0,0,0.4);
+  padding: 20px 20px 20px 20px;
+}
+
+#logo h1, #logo h2 { 
+  font: normal 250% 'News Cycle', arial, sans-serif;
+  border-bottom: 0;
+  text-transform: none;
+  margin: 0;
+}
+
+#logo_text h1, #logo_text h1 a, #logo_text h1 a:hover { 
+  padding: 0;
+  color: #FFF;
+  text-decoration: none;
+}
+
+#logo_text h1 a .logo_colour { 
+  color: #CEC240;
+}
+
+#logo_text a:hover .logo_colour { 
+  color: #FFF;
+}
+
+#logo_text h2 { 
+  font-size: 140%;
+  padding: 0 0 0 0;
+  color: #FFF;
+}
+
+nav { 
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 44px;
+  color: #fef4e9;
+  background-color: rgba(0,0,0,0.4);
+  // background: transparent url(../images/menubar.png);
+} 
+
+#menu_container { 
+  width: 70%;
+  margin: 0 auto 0 auto;
+}
+
+#site_content { 
+  width: 1000px;
+  overflow: hidden;
+  margin: 0px auto 0 auto;
+  padding: 15px 0 25px 0;
+  text-shadow: 0 1px #FFF;
+} 
+
+#sidebar_container { 
+  float: right;
+  width: 234px;
+  margin-top: 20px;
+}
+ul.sf-menu,ul.sf-menu * { 
+  margin: 0;
+  padding: 0;
+}
+
+ul.sf-menu { 
+  display: block;
+  position: relative;
+}
+  
+ul.sf-menu li { 
+  display: block;
+  list-style: none;
+  float: left;
+  position: relative;
+}
+  
+ul.sf-menu li:hover { 
+  visibility: inherit; /* fixes IE7 'sticky bug' */ 
+}
+
+ul.sf-menu a { 
+  display: block;
+  position: relative;
+}
+  
+ul.sf-menu ul { 
+  position: absolute;
+  left: 0;
+  width: 150px; 
+  top: auto;
+  left: -999999px;
+}
+  
+ul.sf-menu ul a { 
+  zoom: 1; /* IE6/7 fix */ 
+}
+
+ul.sf-menu ul li { 
+  float: left; /* Must always be floated otherwise there will be a rogue 1px margin-bottom in IE6/7 */
+  width: 150px;
+}
+  
+ul.sf-menu ul ul { 
+  top: 0;
+  margin: 0 0 0 150px;
+}
+
+ul.sf-menu li:hover ul,ul.sf-menu li:focus ul,ul.sf-menu li.sf-hover ul, 
+ul.sf-menu ul li:hover ul,ul.sf-menu ul li:focus ul,ul.sf-menu ul li.sf-hover ul,
+ul.sf-menu ul ul li:hover ul,ul.sf-menu ul ul li:focus ul,ul.sf-menu ul ul li.sf-hover ul,
+ul.sf-menu ul ul ul li:hover ul,ul.sf-menu ul ul ul li:focus ul,ul.sf-menu ul ul ul li.sf-hover ul { 
+  left: auto;
+}
+  
+ul.sf-menu li:hover ul ul,ul.sf-menu li:focus ul ul,ul.sf-menu li.sf-hover ul ul,
+ul.sf-menu ul li:hover ul ul,ul.sf-menu ul li:focus ul ul,ul.sf-menu ul li.sf-hover ul ul,
+ul.sf-menu ul ul li:hover ul ul,ul.sf-menu ul ul li:focus ul ul,ul.sf-menu ul ul li.sf-hover ul ul,
+ul.sf-menu ul ul ul li:hover ul ul,ul.sf-menu ul ul ul li:focus ul ul,ul.sf-menu ul ul ul li.sf-hover ul ul { 
+  left: -999999px;
+}
+span.sf-arrow { 
+  width: 7px;
+  height: 7px;
+  position: absolute;
+  top: 20px;
+  right: 5px;
+  display: block;
+  background: url(../images/arrows-white.png) no-repeat 0 0;
+  overflow: hidden; /* making sure IE6 doesn't overflow and expand the box */
+  font-size: 1px;
+}
+
+ul ul span.sf-arrow { 
+  right: 10;
+  top: 20px;
+  background-position: 0 100%;
+}
+
+/* Theming the menu */
+ul#nav { 
+  float: left;
+  margin-left: 50px;
+}
+ul#nav ul { 
+  background: #CEC240;
+  margin-top: 5px;
+  padding-bottom: 15px;
+}
+
+ul#nav li a { 
+  padding:5px 25px 6px 25px;
+  font: 150% 'News Cycle', arial, sans-serif;
+  text-shadow: 1px 1px #7E4D0E;
+  text-decoration: none;
+  color:#FFF;
+  margin-right: 2px;
+}
+
+ul#nav li a:hover,ul#nav li a:focus { 
+  color: #FFF;
+  text-decoration: underline;
+}
+  }
+
+
+
+  //主体区域
+  .mycontainer {
+  width: 70%;
+  margin: 0 auto;
+  background-color: transparent;
+  display: flex;
+  padding-bottom: 100px;
+  margin-top: 50px;
+  flex-direction:row ;
+  justify-content: space-between;
+  //左侧
+  .left {
+    padding: 20px 40px;
+    width: 65%;
+    // height: 400px;
+    background-color: #f5f3f3;
+    // box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 2px;
+      border: 1px solid #eee;
+      border-radius: 7px 7px 7px 7px;
+      .article {
+        position: relative;
+        border-bottom: 1px dashed rgba(0, 0, 0, 0.3);
+        a {
+          display: block;
+          color: #333;
+          font-size: 16px;
+          padding-left: 20px;
+          margin-bottom: 50px;
+          cursor: pointer;
+        }
+        .date {
+          position: absolute;
+          top: 0;
+          right: 0;
+        }
+      }
+  }
+  .right {
+    width: 25%;
+    // height: 400px;
+    display: flex;
+    flex-direction: column;
+    .box {
+      width: 100%;
+      height: 200px;
+      margin-bottom: 20px;
+      box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 2px;
+      border: 1px solid #eee;
+      border-radius: 7px 7px 7px 7px;
+      background: -webkit-linear-gradient(#fff, #E6E4D4);
+    }
+  }
+  }
+}

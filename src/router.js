@@ -1,21 +1,28 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import Home from './views/Home.vue';
-import About from './views/About.vue';
+import Blog from './views/main.vue';
+import head from './components/head.vue';
+
 
 Vue.use(Router);
 
 export default new Router({
   routes: [
     {
-      path: '/',
-      name: 'home',
-      component: Home,
+      path: '/blog',
+      name: 'blog',
+      component: Blog,
+      children: [
+        {
+          path: '2017',
+          component: head,
+        },
+      ],
     },
     {
-      path: '/about',
-      name: 'about',
-      component: About,
+      path: '*',
+      name: 'default',
+      component: Blog,
     },
   ],
 });
